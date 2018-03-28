@@ -1,0 +1,22 @@
+
+# Base URL corresponding to your BIG-IP Release
+startPoint = https://downloads.f5.com/esd/product.jsp?sw=BIG-IP&pro=big-ip_v12.x
+
+# F5 Account informations (not devcentral)
+F5AccountUserID = my_email@address.com
+F5AccountPasswd = password
+
+# Access definitions for BIGIP devices
+<bigipAccess "lb1">
+    host 10.0.0.1
+    login  user
+    password psdwd
+</bigipAccess>
+<bigipAccess "lb2">
+    host 10.0.0.2
+    login user
+    password psdwd
+</bigipAccess>
+
+# Filter to be applied on amazon URLs if available
+awsCountryUrl = ire-f5
